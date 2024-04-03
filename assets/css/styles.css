@@ -1,0 +1,358 @@
+/* GLOBALS */
+
+body {
+  background: #212529;
+  color: #ffffff;
+  padding: 0 14px;
+  font-family: Audiowide, serif;
+}
+
+/* HEADER */
+
+.header-con {
+  max-width: 1400px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-bar {
+  background-color: rgba(33,37,41,0.7)!important;
+  border-bottom: 1px solid #565e64 ;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler {
+  background-color: #393E42;
+}
+
+.navbar-toggler span {
+  filter: brightness(0) saturate(100%) invert(72%) sepia(69%) saturate(1047%) hue-rotate(329deg) brightness(100%) contrast(103%);
+}
+
+.about-nav-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .about-nav-item {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.nav-about {
+  background-color: #565E64!important;
+  border-right: 5px solid #393E42!important;
+  border-bottom: 5px solid #393E42!important;
+  border-left: 3px solid #393E42!important;
+  border-top: 3px solid #393E42!important;
+}
+
+.nav-about:active {
+  border-right: 0 solid #393E42!important;
+  border-bottom: 0 solid #393E42!important;
+  border-left: 0 solid #393E42!important;
+  border-top: 0 solid #393E42!important;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  background: url("../../assets/img/grand-theft-auto-vi-official-artwork.jpg") center / cover no-repeat;
+  margin-top: 22px;
+  height: 77vh;
+  box-shadow: inset 0px 612px rgba(0,0,0,0.3);
+  border-radius: 14px;
+  border: 2px solid #ffffff ;
+  border-bottom: none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  max-width: 1400px;
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    border-bottom: 2px solid #ffffff;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+  }
+}
+
+.hero-row {
+  height: 100%;
+}
+
+.hero-col1 {
+  display: flex;
+  height: 50%;
+}
+
+.hero-h1 {
+  font-size: min(90px, calc(28px + 5vw));
+  text-shadow: 5px 5px #000000;
+}
+
+.hero-p {
+  font-size: 20px;
+  text-shadow: 2px 2px rgb(0,0,0);
+  background: rgba(19,110,28,0.63);
+  border-radius: 14px;
+  padding: 10px;
+}
+
+/* HERO XS PARA SECTION */
+
+.hero-xs-para-con {
+  border: 2px solid #ffffff;
+  border-top: none;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 20px 0px #136e1c;
+}
+
+@media (min-width: 768px) {
+  .hero-xs-para-con {
+    display: none;
+  }
+}
+
+.hero-xs-para-con .col {
+  background: rgb(54,45,68);
+  background: linear-gradient(326deg, rgba(54,45,68,1) 0%, rgba(125,85,110,1) 46%, rgba(151,113,128,1) 100%);
+  text-align: center;
+  padding-top: 14px;
+  overflow: hidden;
+}
+
+/* MORE SECTION */
+
+.more-section {
+  max-width: 1400px;
+  padding-top: 70px;
+}
+
+.more-cont-col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (min-width: 768px) {
+  .more-cont-col {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.carousel {
+  border-radius: 14px;
+  border: 2px solid #ffffff;
+  overflow: hidden;
+}
+
+.carousel p {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .carousel p {
+    text-align: start;
+  }
+}
+
+.fit-cover {
+  object-fit: cover;
+}
+
+/* FATHER SECTION */
+
+.father-section {
+  max-width: 1400px;
+}
+
+.father-cont-row {
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 14px;
+  overflow: hidden;
+  background-image: linear-gradient(180deg, rgba(33,37,41, 0.01), rgba(33,37,41, 1) 85%),radial-gradient(ellipse at top left, rgba(13,110,253, 0.5), transparent 50%),radial-gradient(ellipse at top right, rgba(255,228,132, 0.5), transparent 50%),radial-gradient(ellipse at center right, rgba(112.520718, 44.062154, 249.437846, 0.5), transparent 50%),radial-gradient(ellipse at center left, rgba(214, 51, 132, 0.5), transparent 50%);
+}
+
+.father-image {
+  object-position: 0;
+}
+
+/* TRY SECTION */
+
+.try-section {
+  max-width: 1400px;
+}
+
+.try-btn {
+  background-color: #565E64!important;
+  border-right: 5px solid #393E42!important;
+  border-bottom: 5px solid #393E42!important;
+  border-left: 3px solid #393E42!important;
+  border-top: 3px solid #393E42!important;
+}
+
+.play-btn {
+  width: 100%;
+  height: 76px;
+  font-size: 28px;
+  padding: 14px 36px;
+  background-color: #565E64!important;
+  border-right: 5px solid #393E42!important;
+  border-bottom: 5px solid #393E42!important;
+  border-left: 3px solid #393E42!important;
+  border-top: 3px solid #393E42!important;
+}
+
+.play-btn:active {
+  border-right: 0 solid #393E42!important;
+  border-bottom: 0 solid #393E42!important;
+  border-left: 0 solid #393E42!important;
+  border-top: 0 solid #393E42!important;
+  box-shadow: none!important;
+}
+
+.play-btn:focus {
+  box-shadow: none;
+}
+
+#gameCanvas {
+  max-width: 1000px;
+  background: #000;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #ffffff;
+  border-radius: 14px;
+}
+
+/* DYK SECTION */
+
+.dyk-section {
+  max-width: 1400px;
+}
+
+.dyk-con-col1 {
+  background: url("../../assets/img/Spacewar.jpg") center / cover;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 14px;
+}
+
+.dyk-con-col2 {
+  background: url("../../assets/img/pacman.jpg") center / cover;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 14px;
+}
+
+.dyk-con-col3 {
+  background: url("../../assets/img/mario.jpg") center / cover;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 14px;
+}
+
+.dyk-con-col4 {
+  background: url("../../assets/img/adventure.jpg") center / cover;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 14px;
+}
+
+.dyk-con-col5 {
+  background: url("../../assets/img/duke.jpg") center / cover;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 14px;
+}
+
+.dyk-con-col6 {
+  background: url("../../assets/img/minecraft.avif") center / cover;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 14px;
+}
+
+.dyk-section-p1 {
+  text-shadow: 2px 2px #000000;
+  background: rgba(113,44,249,0.6);
+  border-radius: 14px;
+  padding: 10px;
+  box-shadow: 11px 12px 0px rgba(255,255,255,0.6);
+}
+
+.dyk-section-p2 {
+  text-shadow: 2px 2px #000000;
+  background: rgba(249,44,44,0.6);
+  border-radius: 14px;
+  padding: 10px;
+  box-shadow: 11px 12px 0px rgba(255,255,255,0.6);
+}
+
+.dyk-section-p3 {
+  text-shadow: 2px 2px #000000;
+  background: rgba(0,134,192,0.6);
+  border-radius: 14px;
+  padding: 10px;
+  box-shadow: 11px 12px 0px rgba(255,255,255,0.6);
+}
+
+.dyk-section-p4 {
+  text-shadow: 2px 2px #000000;
+  background: rgba(0,253,40,0.6);
+  border-radius: 14px;
+  padding: 10px;
+  box-shadow: 11px 12px 0px rgba(255,255,255,0.6);
+}
+
+.dyk-section-p5 {
+  text-shadow: 2px 2px #000000;
+  background: rgba(249,44,179,0.6);
+  border-radius: 14px;
+  padding: 10px;
+  box-shadow: 11px 12px 0px rgba(255,255,255,0.6);
+}
+
+.dyk-section-p6 {
+  text-shadow: 2px 2px #000000;
+  background: rgba(198,83,0,0.6);
+  border-radius: 14px;
+  padding: 10px;
+  box-shadow: 11px 12px 0px rgba(255,255,255,0.6);
+}
+
+/* FOOTER */
+
+.footer-bar {
+  max-width: 1400px;
+}
+
+.footer-bar footer {
+  border-top: 1px solid #565e64;
+}
+
+.footer-img {
+  width: 28px;
+  height: auto;
+}
+
+.footer-bar a {
+  text-decoration: none;
+}
+
+.footer-h1 {
+  color: #ffffff;
+  font-size: 39px;
+}
+
